@@ -21,6 +21,7 @@ import { trpc } from '@/trpc/client'
 import { toast } from 'sonner'
 import { ZodError } from 'zod'
 import { useRouter } from 'next/navigation'
+import VerifyEmail from '@/components/VerifyEmail'
 
 const Page = () => {
   const {

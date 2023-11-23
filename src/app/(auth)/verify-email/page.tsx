@@ -31,7 +31,9 @@ const VerifyEmailPage = ({ searchParams }: PageProps) => {
             <h3 className='font-semibold text-2xl'>
               Check your email
             </h3>
-
+            {/*  TODO:  <p className='text-center'>
+              Please sign in. Email Validation paused on this site.
+            </p> */}
             {toEmail ? (
               <p className='text-muted-foreground text-center'>
                 We&apos;ve sent a verification link to{' '}
