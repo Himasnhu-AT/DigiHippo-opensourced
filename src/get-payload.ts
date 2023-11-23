@@ -9,13 +9,13 @@ dotenv.config({
 })
 
 const transporter = nodemailer.createTransport({
-  host: "smpt.resend.com",
+  host: 'smtp.resend.com',
   secure: true,
   port: 465,
   auth: {
-    user: "resend",
+    user: 'resend',
     pass: process.env.RESEND_API_KEY,
-  }
+  },
 })
 
 let cached = (global as any).payload
@@ -46,8 +46,8 @@ export const getPayloadClient = async ({
     cached.promise = payload.init({
       email: {
         transport: transporter,
-        fromAddress: 'onboarding@resend.com',
-        fromName: 'DigiHippo',
+        fromAddress: 'hello@joshtriedcoding.com',
+        fromName: 'DigitalHippo',
       },
       secret: process.env.PAYLOAD_SECRET,
       local: initOptions?.express ? false : true,
