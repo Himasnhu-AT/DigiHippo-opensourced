@@ -27,8 +27,8 @@ export function formatPrice(
 }
 
 export function constructMetadata({
-  title = 'DigiHippo - the marketplace for digital assets',
-  description = 'DigiHippo is an open-source marketplace for high-quality digital goods.',
+  title = 'digihippo - the marketplace for digital assets',
+  description = 'digihippo is an open-source marketplace for high-quality digital goods.',
   image = '/thumbnail.png',
   icons = '/favicon.ico',
   noIndex = false,
@@ -59,7 +59,7 @@ export function constructMetadata({
       creator: '@joshtriedcoding',
     },
     icons,
-    metadataBase: new URL('https://DigiHippo.up.railway.app'),
+    metadataBase: new URL('https://digihippo.up.railway.app'),
     ...(noIndex && {
       robots: {
         index: false,

@@ -15,7 +15,7 @@ export const Orders: CollectionConfig = {
   admin: {
     useAsTitle: 'Your Orders',
     description:
-      'A summary of all your orders on DigiHippo.',
+      'A summary of all your orders on digihippo.',
   },
   access: {
     read: yourOwn,
